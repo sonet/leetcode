@@ -1,0 +1,11 @@
+{
+    "name": "root/app",
+
+    "autoload": {
+        "files": ["app/LeetArray.php"]
+    },
+
+    "require": {
+        "phpunit/phpunit": "^9.5"
+    }
+}
