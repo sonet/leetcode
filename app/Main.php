@@ -11,5 +11,5 @@ require 'vendor/autoload.php';
 
 // LeetArr::addTwo([2,7,11,15],9);
 
-//LeetArr::maxDistance([1,8,3,8,3]);
-LeetArr::maxDistance([1,1,1,6,1,1,1]);
+LeetArr::maxDistance([1,8,3,8,3]);
+//LeetArr::maxDistance([1,1,1,6,1,1,1]);

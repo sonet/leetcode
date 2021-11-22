@@ -65,6 +65,21 @@ final class LeetArr
      */
     public static function maxDistance($colors)
     {
-        return null;
+        // 1. get all color options
+        print_r($colorsUni = array_unique($colors));
+        $resArr  = [];
+        foreach ($colorsUni as $key => $color) {
+            $firstIdx = array_search($color, $colors); echo "F:$firstIdx "; // first occur
+            $i = count($colors);
+              do {
+                  $i--;
+              } while($colors[$i] === $color); // first diff color from the right
+              echo "F:$firstIdx | I:$i | ";
+              $dist = $i - $firstIdx;
+            echo "Col:" . $colors[$key] . " | Dist: $dist \n";
+            $resArr[$color] = $dist;
+            echo max($resArr);
+        }
+        return max($resArr);
     }
 }
