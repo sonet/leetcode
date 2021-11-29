@@ -1,4 +1,4 @@
 vendor/
 .idea/
 .phpunit.result.cache
-
+js/node_modules/
